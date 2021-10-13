@@ -1,15 +1,19 @@
 resumen video introduccion a sisteas operativos
-Un sistema operativo es un programa que gestiona los recursos del sistema con el fin de conectar el hardware con el software que se ejecuta en un dispositivo y como interactua el usuario con este
-se nececita un sistema operativo ara poder instalar software
-windows y linux
-uso de manera comoda e intuitiva
-un sistema operativo debe tener la habilidad para evolucionar, mejoras que no impidan el manejo y que den paso a nuevas caracteristicas
-asignar recursos del hardware (procesador, ram ,etc) a diversas tareas
-capacidad de conectar e interactuar con equipos perifericos 
-organizar datos y comunicaciones de red 
-tecnica de recuparacion de errores 
+Un sistema operativo es un programa que gestiona los recursos del sistema con el fin de conectar el hardware con el software que se ejecuta en un dispositivo y como interactua el usuario con este.
+principale:
+windows, macos y linux 
+en dispositivos moviles:
+ios y android
+caractristicas:
+un sistema operativo debe poder usarse de manera comoda e intuitiva
+un sistema operativo debe tener la habilidad para evolucionar, los desarrolladores puedan hacer mejoras que no impidan el manejo y que den paso a nuevas caracteristicas
+La capacidad de asignar recursos del hardware (procesador, ram ,etc) a diversas tareas
+capacidad de conectar e interactuar con equipos perifericos
+El sistema operativo permite al  usuario tener manejo de datos de manera organizada
+comunicacionde de red 
+un sistema operativo debe tener funciones para solucionar problemas y notificarlos 
 tipos:
-multitareas
+multitareas - permiten ejecutar varios programas a la vez
 monousuario - multiusuario
 
 
