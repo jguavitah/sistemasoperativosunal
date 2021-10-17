@@ -1,0 +1,34 @@
+Bases de Sistemas operativos
+a partir de ciertas nececidades surgen caracteristicas que forman los sistemas operativos que conocemos actualmente
+control de los recursos directamente
+ejecutar programas de manera concurrente, se aprovecha el tiempo de cpu para ejecutar varios programas en simultaneo
+IBM hizo publica su arquitectura de pc
+a partir de ahi empezo el comercio y manufacturacion de componentes para pc por lo cual , el sistema operativo tiene que trabajar con abstracciones que se pueden interpretar sin importar el hardware
+ofrecer una interfaz de usuario
+Caracterizticas de os moderno:
+multitareas
+multiusuario capacidad de identificar diferentes usuarios y asignar privilegios
+multiprocesamiento o multiprocesador
+capacidad de dadministrar maquinas con varios cpus
+multiprocesamiento asimetrico y simetrico
+
+implementar multitareas
+  abstraer memoria, procesador, perifericos
+  
+  multitarea colabortiva
+  sin soporte de hardware se necesita que los programas colaoren entre si
+  soporte de hardware
+  cpu distingue entre codigo de OS y de otros programas "anillos de ejecucion"
+  el anillo 1 se ejecutan los programas propios de sistemas operativos, los demas procesos 
+  configurados por el usuario se ejecutan en un anillo 2
+  .paso de anillo 1 a anillo 2 :
+    mediante un salto largo que utiliza el OS para ejecutar programas de usuario
+   paso de anillo 2 a anillo 1 :
+   cuando se produce una interrupción de CPU , se ejecuta un codigo del OS en el anillo 1
+   
+    
+  
+  
+  
+  
+
