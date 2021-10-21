@@ -26,6 +26,55 @@ implementar multitareas
    paso de anillo 2 a anillo 1 :
    cuando se produce una interrupción de CPU , se ejecuta un codigo del OS en el anillo 1
    
+   
+ interrupciones del os
+ Arquitectura de Sistemas operaivos
+ forma de diseño de os
+ 
+ rquitectura monolitico
+ el codigo del os corre en el anillo 1 y en el mismo zona de memoria
+ es un espacio que se divide internemente enetres partes,
+ una interaction con el harware, procesos de usuario 
+  capa de arriba ------- llamadas al sistema :  comunicacion entre los procesos con el sistema
+capa intermedia --- abstracciones y administradores ------ organizacion de archivos y memoria
+controladores / drivers : son rutinas que saben interactuar con un hardware o software  especifico
+
+EJEMPLO de os monolitico : linux
+venntajas de esta arquitectura:
+eficiencia con la comunicacion entre los componentes del nucleo del os
+
+Desventajas :
+se requiere una organizacion especial al programar o tocar un componente del os porque se puede producir un efecto mariposa
+mucho orden y convenciones con los simbolos
+esquemas de pruebas de regresion 
+
+ARQUITECTURA MICROKERNEL:
+se extrae del anillo 1 los procesos de usuario
+kernel minimo e indispensable, con funcionalidadcritica:
+-proteccion de memoria
+-planificacion de procesos e hilos
+-mecanismos de comunicacion entre procesos
+VENTAJAS
+ya no existe el riesgo de efecto mariposa
+ya no hay acoplamiento entre componentes
+diseño mas flexible
+DESVENTAJAS
+No es tan eficiente
+los primeros microkernels funcionaban hasta 10 veces ms lento que una arquitectura microkernel
+actualmente con mecanismos IPC muy eficientes , esta arquitecturas so casi tan eficientes.
+Windows NT
+GNU hurd
+
+ABSTRACCIONES
+memoria secundaria
+  memoria que esta conectada de forma indirecta al procesador a traves de l bus de entrada/salida
+  
+  Disco rigido--- controladora de disco --- bus de entrada/salida ej. SATA ----- controlador de SATA generico---- controlador SCSI para SATA --- controlador SCSI
+ 
+ El nivel de SCSI ens un nivel para hablar con dispositivos donde ls operaciones tienen que ver con leer escribir en forma aleatoria o secuencial
+ 
+  
+ 
     
   
   
