@@ -4,7 +4,7 @@ import os
 p = os.path.dirname(os.getcwd()) #devuelve el path del directorio donde se encuentra actualmente el worksapce
 os.chdir(p+ "/parcial 1")
 def escribir():
-    A = open('funcioneOS.txt','w')
+    A = open('funcioneOS.txt','w') # creamos el archivo . txt
     A.write("""Funcion de un sistema operativo
     1. Gestionar procesos o recursos para que los programas puedan ejecutarse de manera correcta.
     2.multiusuario capacidad de identificar diferentes usuarios y asignar privilegios
