@@ -15,16 +15,18 @@ async def llamada(lista,H,P): #creacion de sockets y request de informacion
     request = "{a} HTTP/1.0\r\nHost: www.buda.com\r\n\r\n".format(a= lista) 
         
     Wrapped.sendall(str.encode(request))
-     
-    while True:
+    data=''
+    while True: # ciclo para almacenar bytes en una variable reply
         reply = Wrapped.recv(1024)
-        if len(reply)<1:
+        if len(reply)<=0:
             break
         print(lista)
+        data += reply.decode() #se decodofican los bytes
         nombre= lista[28:]
-        path = os.path.join(os.getcwd(),"{n}.txt".format(n = nombre))
-        with open(path, 'w') as f:
-            f.write(reply.decode())
+    path = os.path.join(os.getcwd(),"{n}.txt".format(n = nombre))# creacion de txt de cada una de las funciones
+    with open(path, 'w') as f:
+        f.write(data)
+        
     
             
     
@@ -35,6 +37,7 @@ async def main():
     # una lista que guarda las request que se solicitan a buda.com
     for i in tipo_dato: 
         tasks = asyncio.create_task(llamada(i,HOST,PORT))
+        await asyncio.sleep(1)
         await tasks
     print("enviado")    
     
@@ -49,6 +52,5 @@ asyncio.run(main())
 
 
 # CLOSE SOCKET CONNECTION
-
 
 
