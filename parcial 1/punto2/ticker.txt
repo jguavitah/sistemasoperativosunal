@@ -1,0 +1,26 @@
+HTTP/1.1 200 OK
+Date: Tue, 09 Nov 2021 15:55:15 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 219
+Connection: close
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+x-download-options: noopen
+x-permitted-cross-domain-policies: none
+referrer-policy: strict-origin-when-cross-origin
+etag: W/"95a0a8238562f1583a6efe1e5af0c499"
+x-runtime: 0.255946
+x-request-id: 3e7f109b-e78b-43fe-b4f7-9207a5aad067
+cache-control: max-age=2s, public
+x-cache: pass uncacheable
+x-envoy-upstream-service-time: 290
+CF-Cache-Status: EXPIRED
+Accept-Ranges: bytes
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Set-Cookie: __cf_bm=z6tpKrqoPnrBEXkUMDZggohxiMgSI5vK7ih3O30UD8o-1636473315-0-Ad3vE5DMnCRV/u/dS0dj6C3D1ZzDJ99pmHyEoF8kb9GSHMJ+q9aFws43Y2leWhHXUJiEtGJ8nwsw1xh1WorITMg=; path=/; expires=Tue, 09-Nov-21 16:25:15 GMT; domain=.buda.com; HttpOnly; Secure
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Server: cloudflare
+CF-RAY: 6ab8396cadd5da9e-BOG
+
+{"ticker":{"market_id":"ETH-BTC","last_price":["0.07141994","BTC"],"min_ask":["0.07141994","BTC"],"max_bid":["0.070717","BTC"],"volume":["2.807518391","ETH"],"price_variation_24h":"-0.019","price_variation_7d":"0.006"}}
