@@ -1,0 +1,6 @@
+Funcion de un sistema operativo
+    1. Gestionar procesos o recursos para que los programas puedan ejecutarse de manera correcta.
+    2.multiusuario capacidad de identificar diferentes usuarios y asignar privilegios
+    3.Administrar la memoria principal del dispositivo, de modo que aunque varios programas se pongan en marcha, cada uno cuente con una entrada de memoria independiente
+    4.Detectar errores, mantener la operatividad y controlar dispositivos, de manera que se eviten las interrupciones.
+    5.multiprocesamiento asimetrico y simetrico
